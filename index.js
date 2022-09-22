@@ -1,33 +1,36 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 // function readmeText(){}
 
+readMeResults += `
+#${projectTitle}
 
-`#${projectTitle}`
+## About The Project
+${projectDescription}
 
-'## About The Project'
-`${projectDescription}`
+## Table of Contents
 
-'## Table of Contents'
+## Installation
+${installation}
 
-'## Installation'
-`${installation}`
+## Usage
+${usage}
 
-'## Usage'
-`${usage}`
+## License
+${license}
 
-'## License'
-`${license}`
+## Contributions
+${contributions}
 
-'## Contributions'
-`${contributions}`
+## tests
+${tests}
 
-'## tests'
-`${tests}`
+## Contact Me
+${contactMe}
 
-'## Contact Me'
-`${contactMe}`
+`
 
 // TODO: Create an array of questions for user input
 const questions = [
