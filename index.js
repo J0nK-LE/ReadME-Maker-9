@@ -2,68 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-let projectTitle;
-let projectDescription;
-let installation;
-let usage;
-let license;
-let contributions;
-let tests;
-let contactMe;
-let repoName;
-let gitName;
-
-
-
-// readmeText = `
-
-// <h1 align="center">${projectTitle}</h1>
-
-// <div align="center">
-
-// ## About The Project
-
-// ${projectDescription}
-
-// Link to repo - [https://github.com/${gitName}/${repoName}](https://github.com/${gitName}/${repoName})
-
-// Link to deployed  - [https://${gitName}.github.io/${repoName}](https://${gitName}.github.io/${repoName})
-// </div>
-
-
-// ## Table of Contents
-// <summary>Table of Contents</summary>
-// <ol>
-//   <li><a href="#about-the-project">About The Project</a></li>
-//   <li><a href="#Installation">Installation</a></li>
-//   <li><a href="#Usage">Usage</a></li>
-//   <li><a href="#License">License</a></li>
-//   <li><a href="#Contributing">Contributing</a></li>
-//   <li><a href="#Tests">Tests</a></li>
-//   <li><a href="#Questions">Questions</a></li>
-// </ol>
-
-// ## Installation
-// ${installation}
-
-// ## Usage
-// ${usage}
-
-// ## License
-// ${license}
-
-// ## Contributions
-// ${contributions}
-
-// ## Tests
-// ${tests}
-
-// ## Questions
-// Email - ${contactMe}
-
-// GitHub - [https://github.com/${gitName}](https://github.com/${gitName})
-
-// `
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -99,7 +37,7 @@ const questions = [
   },
   {
     type: 'list',
-    message: 'What licenses are used?',
+    message: 'What license is used?',
     name: 'license',
     choices: ['MIT', 'Apache', 'GNU', 'IBM', 'ISC', 'Mozilla']
   },
@@ -138,7 +76,7 @@ function init() {
   inquirer
     .prompt(questions)
     .then((response) => {
-      console.log(response)
+      // console.log(response)
 
       let readmeText = `<h1 align="center">${response.projectTitle}</h1>
 <div align="center">
@@ -171,6 +109,7 @@ ${response.usage}
 ## License
 Uses the [${response.license} license][${response.license}-url]
 ## Contributing
+Follow these steps to start contributing - 
 ${response.contributing}
 ## Tests
 ${response.tests}
@@ -193,7 +132,8 @@ GitHub - [https://github.com/${response.gitName}](https://github.com/${response.
 [Mozilla-bdg]:https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg
 [Mozilla-url]:https://opensource.org/licenses/MPL-2.0
 `
-      fs.writeFile("ReadMe.md", readmeText, function (err) {
+      fs.writeFile("ReadMe-Generated.md", readmeText, function (err) {
+
         if (err) {
           console.error(err);
         } else {
@@ -201,7 +141,6 @@ GitHub - [https://github.com/${response.gitName}](https://github.com/${response.
         }
 
       })
-
 
     });
 
