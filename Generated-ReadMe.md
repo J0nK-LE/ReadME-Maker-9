@@ -1,13 +1,14 @@
-<h1 align="center">Jon Kelly's ReadME Maker's ReadMe</h1>
+<h1 align="center">Readme maker</h1>
 <div align="center">
 
 ## About The Project
-Allows the user to create a filled out ReadMe.md file by answering questions through the terminal
+Allows users to create a filled out Readme.md file by answering questions through the terminal
 
-![](assets/ReadMe-maker-video.gif)
+Link to repo - [https://github.com/J0nK-LE/challenge7](https://github.com/J0nK-LE/challenge7)
 
-Link to repo - [https://github.com/J0nk-LE/Challenge7](https://github.com/J0nk-LE/Challenge7)
-</div>
+Link to deployed  - [https://J0nK-LE.github.io/challenge7](https://J0nK-LE.github.io/challenge7)
+
+[![License][ISC-bdg]][ISC-url]</div>
 
 ## Table of Contents
 <summary>Table of Contents</summary>
@@ -15,26 +16,27 @@ Link to repo - [https://github.com/J0nk-LE/Challenge7](https://github.com/J0nk-L
        <li><a href="#about-the-project">About The Project</a></li>
        <li><a href="#installation">Installation</a></li>
        <li><a href="#usage">Usage</a></li>
+       <li><a href="#license">License</a></li>
        <li><a href="#contributing">Contributing</a></li>
        <li><a href="#tests">Tests</a></li>
        <li><a href="#questions">Questions</a></li>
      </ol>
 
 ## Installation
-Required Node with dependencies on inquirer@8.2.4
+Requires Node and has dependencies of inquirer@8.2.4
 ## Usage
-To create ReadMe files
+create ReadMe files
 ## License
-[![License][ISC-bdg]][ISC-url]
+Uses the [ISC license][ISC-url]
 ## Contributing
 Follow these steps to start contributing - 
-Fork the Repo. Create a new branch. Let me know what you contribute
+Fork the Repo, create a new branch and get started
 ## Tests
-Try it out
+carefully
 ## Questions
-Email - JonFkelly@gmail.com
+Email - JonFKelly@gmail.com
 
-GitHub - [https://github.com/J0nk-LE](https://github.com/J0nk-LE)
+GitHub - [https://github.com/J0nK-LE](https://github.com/J0nK-LE)
 
 
 [MIT-bdg]:https://img.shields.io/badge/License-MIT-yellow.svg
