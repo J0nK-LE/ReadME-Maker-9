@@ -132,7 +132,7 @@ GitHub - [https://github.com/${response.gitName}](https://github.com/${response.
 [Mozilla-bdg]:https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg
 [Mozilla-url]:https://opensource.org/licenses/MPL-2.0
 `
-      fs.writeFile("ReadMe-Generated.md", readmeText, function (err) {
+      fs.writeFile("Generated-ReadMe.md", readmeText, function (err) {
 
         if (err) {
           console.error(err);
